@@ -1,0 +1,96 @@
+/* social icons */
+.fa-facebook-messenger {
+    font-size: 30px;
+    color: blue;
+    margin-right: 50px;
+}
+.instagram {
+    font-size: 30px;
+    color: red;
+}
+.social-icons {
+    display: flex;
+}
+
+
+/* header styles */
+.header-wraper {
+   height: 76px;
+}
+.header-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+    background-color: lightcoral;
+    padding: 30px;
+    z-index: 50;
+}
+.nav-ul {
+    display: flex;
+    justify-content: space-between;
+    background-color: aqua;
+    width: 400px;
+}
+
+body {
+    height: 1800px;
+}
+
+
+/* chat image */
+.chat-image {
+    height: 100px;
+}
+.chat-icon {
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+}
+
+/* absolute & relative */
+.wraper-box {
+    width: 400px;
+    height: 400px;
+    background-color: yellow;
+    position: relative;
+}
+.child-box {
+    width: 150px;
+    height: 150px;
+    background-color: red;
+    position: absolute;
+    top: 50px;
+    left: 100px;
+    z-index: 3;
+}
+.child-box2 {
+    width: 150px;
+    height: 150px;
+    background-color: aqua;
+    position: absolute;
+    top: 80px;
+    left: 150px;
+    z-index: 4;
+}
+.hello {
+    position: absolute;
+    left:0;
+    bottom:0;
+}
+
+/* image example */
+.image-text {
+    position: absolute;
+    top: 50px;
+    right: 100px;
+    color: red;
+    font-size: 30px;
+}
+.image-wraper {
+    position: relative;
+    display: inline-block;
+}
