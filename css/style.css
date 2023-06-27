@@ -36,10 +36,6 @@
     width: 400px;
 }
 
-body {
-    height: 1800px;
-}
-
 
 /* chat image */
 .chat-image {
@@ -94,3 +90,96 @@ body {
     position: relative;
     display: inline-block;
 }
+
+
+/* lesson 8 styles */
+.parent-box {
+    width:400px;
+    height: 400px;
+    background-color: yellow;
+    position: relative;
+
+    /* transition-property: all;
+    transition-duration: 0.5s;
+    transition-timing-function: linear;
+    transition-delay: 2s */
+    transition: all 0.5s linear 2s;
+}
+.child-box1 {
+    width:150px;
+    height: 150px;
+    background-color: aqua;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) rotate(45deg);
+    transition: all 0.3s;
+}
+
+/* hover effects */
+.parent-box:hover {
+    background-color: red;
+}
+.child-box1:hover {
+    background-color: green;
+    transform: translate(-50%,-50%) rotate(0deg);
+}
+
+/* .parent-box:hover .child-box1 {
+    background-color:brown;
+} */
+
+/* keygrame animation */
+.car-move {
+    height: 100px;
+    /* animation-name: car;
+    animation-duration: 5s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+    animation-delay: 3s; */
+    animation: car 5s ease infinite 3s;
+    position: absolute;
+    
+}
+.image-car-wraper {
+    position: relative;
+    height: 150px;
+}
+
+/* bg  image property */
+.bg-image {
+    background-image: url('../images/photographer.jpg');
+    height: 500px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.hello-bg-image {
+    color: #fff;
+    position: absolute;
+    top: 150px;
+    left: 150px;
+}
+
+
+
+
+/* keyframe */
+@keyframes car {
+    from {right: 0px;}
+    to {right: 800px;}
+}
+
+/* @keyframes car2 {
+    from {transform: translateX(0px) rotate(45deg); }
+    to {transform: translateX(800px) rotate(360deg);}
+} */
+/* 
+@keyframes car3 {
+    0% {}
+    25% {}
+    50% {}
+    70% {}
+    100% {}
+} */
